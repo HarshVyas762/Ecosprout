@@ -1,7 +1,6 @@
 import './App.css';
 import logo from './img/logo.png';
 import topview from './img/top-view-gardening-tools-flower-pot.png';
-import pot from './img/plant-pot-mockup 1.png';
 import arr from './img/Vector.svg';
 import whitearr from './img/arrow.svg';
 import propic from './img/propic.png';
@@ -56,7 +55,7 @@ function App() {
               <button className='banner_btn' style={{ marginTop: '42px' }}><span className='btn_txt'>Join Now</span><img className='whitearr' alt='' src={whitearr} style={{ paddingLeft: '10px', height: '12px' }} /></button>
             </div>
             <div className='mod col-lg-4 col-md-4 col-sm-12'>
-            <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' width='600px' height='900px'></iframe>
+            <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='600px' height='900px'></iframe>
 </div>  
             <div className='col-lg-3 col-md-5' style={{ alignItems: 'end', display: 'flex', flexDirection: 'column' }}>
               <img className='propic' src={propic} alt='' />
