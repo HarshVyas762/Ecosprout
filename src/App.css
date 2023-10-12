@@ -407,7 +407,7 @@ color: white;
 .container{
   padding: 0 20px;
 }
-
+/* 
 .continents {
   right: 82vw;
   top: 110em;
@@ -416,7 +416,7 @@ color: white;
 .volunteers {
   right: 26vw;
   top: 115em;
-}
+} */
 
 .boxcol{
 flex-direction: row;
