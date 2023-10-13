@@ -8,7 +8,6 @@ h1,h2,h3,h4,h5,h6,p,span{
 
 body {
   font-family: 'Montserrat';
-  width: fit-content;
 }
 
 @media(max-width:1200px){
@@ -213,6 +212,20 @@ margin-top: 20px;
   position: relative;
 }
 
+
+.our{
+  font-size: 172px;
+  font-weight: 900;
+  height: auto;
+  line-height: 149px;
+}
+
+.mission{
+  font-size: 86px;
+  font-weight: 600;
+  height: auto;
+  line-height: normal;
+}
 /* sec2 */
 
 /* sec3 */
@@ -331,6 +344,7 @@ text-align: left;
   flex-direction: column;
   gap: 30px;
   margin-left: 8vw;
+  width: -webkit-fill-available;
   padding: 50px;
   border: 1px solid #CED1D8;
   background-color: white;
@@ -419,6 +433,49 @@ color: white;
 } */
 
 .boxcol{
-flex-direction: row;
+  gap: 30px;
+  margin: auto;
+  margin-top: 30px;
+}
+.mod{
+  display: none;
+}
+
+.menu-item{
+  display: none;
+}
+
+.div3{
+  flex-direction: column;
+}
+
+.our{
+  font-size: 100px;
+}
+
+.mission{
+  font-size: 56px;
+}
+
+.sec3_title{
+  font-family: Inter;
+  font-size: 27px;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+.sec5col1 {
+  margin-left: auto;
+}
+.sec5_title {
+  font-size: 30px;
+}
+
+p{
+  font-size: 14px !important;
+}
+
+.form_field {
+  width: -webkit-fill-available;
 }
 }
