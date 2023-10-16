@@ -587,6 +587,8 @@ color: white;
 
 .our{
   font-size: 13vw;
+  line-height: initial;
+  margin-top: 50px;
 }
 
 .mission{
@@ -616,14 +618,14 @@ p{
 }
 
 .volunteers {
-  right: 7vw;
-  top: 54em;
+  right: 29vw;
+  top: 47em;
   width: 70px;
 }
 
 .continents {
   right: 17vw;
-  top: 46em;
+  top: 43em;
   width: 60px;
 }
 
