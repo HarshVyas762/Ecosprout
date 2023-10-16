@@ -676,11 +676,11 @@ place-content: space-between;
 }
 
 .modmob {
-  left: auto;
-  position: absolute;
-  z-index: 1;
-  top: -3em;
   display: inherit;
+  left: 29vw;
+  position: absolute;
+  top: 9em;
+  z-index: 1;
 }
 
 .modpc{
