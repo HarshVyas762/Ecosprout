@@ -422,7 +422,7 @@ color: white;
 
  /* sec5 */
 
-@media(min-width:1200px){
+@media(min-width:1000px){
   .modmob{
     display: none;
   }
@@ -441,7 +441,7 @@ color: white;
 
  /* 1200px and 800px*/
 
- @media(min-width:800px) and (max-width:1200px){
+ @media(min-width:800px) and (max-width:1000px){
   .section{
     padding-top: 70px;
   }  
