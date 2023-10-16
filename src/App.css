@@ -730,16 +730,16 @@ place-content: space-between;
 
 .div3sub{
     z-index: 9999;
-    background: linear-gradient(to right,#F2F2F2 46.5%, white 46%);
-}
+    background: linear-gradient(to right,#F2F2F2 53.5%, white 46%);
+  }
 
 .logo {
   height: 40px;
 }
 
 .sec2btn{
-  height: 7vw;
-  width: 17vw;
+  height: 10vw;
+  width: 30vw;
 }
 
 }
