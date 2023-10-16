@@ -118,7 +118,7 @@ function App() {
 
       <div className='sec4 section container'>
         <div className='sec4div1'>
-          <div className='col-md-3 col-md-3 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
+          <div className='col-md-3 col-md-12 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
             <span className='sec4_title'>Go Green!</span>
             <p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
           </div>
@@ -142,7 +142,7 @@ function App() {
         {/* <ThreeModelViewer /> */}
         {/* <canvas id="canvas3d"></canvas> */}
         <div style={{ display: 'flex' }}>
-          <div className='col-lg-6 col-md-6 col-sm-12 sec5col1'>
+          <div className='col-lg-6 col-md-12 col-sm-12 sec5col1'>
             <span className='sec5_title'>Any Questions ?</span>
             <p className='sec5_desc'>You can reach us anytime at <span style={{ color: '#479C2B' }}>support@ecosprout.com</span></p>
             <form className='form'>
