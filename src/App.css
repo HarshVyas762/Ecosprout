@@ -437,6 +437,11 @@ color: white;
     width: 24vw;
 }
 
+.div3sub{
+  z-index: 9999;
+  background: linear-gradient(to right,#F2F2F2 46.5%, white 46%);
+}
+
 .our{
   font-size: 80px;
 }
@@ -476,6 +481,7 @@ color: white;
 
 .div3 {
   flex-wrap: wrap;
+  padding-left:0px;
 }
 
 .sec2img1{
