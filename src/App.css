@@ -737,6 +737,11 @@ place-content: space-between;
   height: 40px;
 }
 
+.sec2btn{
+  height: 7vw;
+  width: 17vw;
+}
+
 }
 
 /* 800px */
