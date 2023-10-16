@@ -696,6 +696,10 @@ place-content: space-between;
     background: linear-gradient(to right,#F2F2F2 46.5%, white 46%);
 }
 
+.logo {
+  height: 40px;
+}
+
 }
 
 /* 800px */
