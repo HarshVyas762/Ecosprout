@@ -50,7 +50,7 @@ function App() {
           </div>
 
           <div className="div3">
-            <div className='col-lg-3 col-md-5'>
+            <div className='col-lg-3 col-md-5 div3sub'>
               <p className='banner_desc'>Cultivating a greener world through sustainable practices, tree planting initiatives, and environmental stewardship to foster a harmonious coexistence with nature.</p>
               <button className='banner_btn' style={{ marginTop: '42px' }}><span className='btn_txt'>Join Now</span><img className='whitearr' alt='' src={whitearr} style={{ paddingLeft: '10px', height: '12px' }} /></button>
             </div>
