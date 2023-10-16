@@ -311,6 +311,7 @@ width: 150px;
   align-items: center;
   row-gap: 20px;
   text-align: center;
+  place-content: space-around;
 }
 
 .sec4_title{
