@@ -215,6 +215,12 @@ background-color: white;
 margin-top: 20px;
 }
 
+.sec2 .container{
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
 .sec2desc{
     margin-top: 20px;
     line-height: 24px;
@@ -427,7 +433,7 @@ color: white;
 
  /* 1200px and 800px*/
 
- @media(max-width:1200px) and (min-width:800px){
+ @media(min-width:800px) and (max-width:1200px){
   .section{
     padding-top: 70px;
   }  
@@ -488,6 +494,26 @@ color: white;
 .sec2img1{
   width: 37vw;
 }
+
+.div3sub{
+  z-index: 9999;
+  background: linear-gradient(to right,#F2F2F2 53.5%, white 46%);
+}
+
+.sec2btn {
+  height: 7vw;
+  width: 17vw;
+}
+
+.continents {
+  right: 21vw;
+  top: 37em;
+}
+
+.continents {
+  right: 21vw;
+  top: 37em;
+}
 }
 
  /* 1200px and 800px*/
@@ -508,7 +534,8 @@ color: white;
   }
 
 .sec2 .container{
-  flex-direction: column;
+ gap: 0;
+ flex-direction: row;
 }
 
 .sec2img1{
@@ -559,11 +586,11 @@ color: white;
 }
 
 .our{
-  font-size: 100px;
+  font-size: 13vw;
 }
 
 .mission{
-  font-size: 56px;
+  font-size: 13px;
 }
 
 .sec3_title{

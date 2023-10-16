@@ -74,7 +74,7 @@ function App() {
       </div>
 
       <div className='sec2 section'>
-        <div className='container' style={{ display: 'flex', gap: '70px', flexWrap:'wrap' }}>
+        <div className='container'>
           <div className='col-lg-5 col-md-5 col-sm-12'>
             <img className='imgsvg' src={sec2svg} alt='' />
             <img className='sec2img1' src={sec2img1} alt='' />
