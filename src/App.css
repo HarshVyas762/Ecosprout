@@ -431,6 +431,14 @@ color: white;
   }
 }
 
+@media(max-width:1000px){
+  .div3sub{
+    z-index: 9999;
+    background: linear-gradient(to right,#F2F2F2 53.5%, white 46%);
+  }
+
+}
+
  /* 1200px and 800px*/
 
  @media(min-width:800px) and (max-width:1200px){
@@ -443,11 +451,11 @@ color: white;
     left: 20px;
     width: 24vw;
 }
-
+/* 
 .div3sub{
   z-index: 9999;
   background: linear-gradient(to right,#F2F2F2 46.5%, white 46%);
-}
+} */
 
 .our{
   font-size: 80px;
@@ -728,10 +736,6 @@ place-content: space-between;
   padding-left: 0;
 }
 
-.div3sub{
-    z-index: 9999;
-    background: linear-gradient(to right,#F2F2F2 53.5%, white 46%);
-  }
 
 .logo {
   height: 40px;
