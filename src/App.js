@@ -18,8 +18,9 @@ import sec4img3 from './img/sec4img3.svg';
 import sec4img4 from './img/sec4img4.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet } from "react-helmet";
-// import ThreeScene from './components/ThreeScene'; 
-
+import SidebarMenu from 'react-bootstrap-sidebar-menu';
+import 'react-bootstrap-sidebar-menu/dist/sidebar-menu.scss'
+// import ThreeScene from './components/ThreeScene';
 
 function App() {
 
@@ -176,7 +177,7 @@ function App() {
         </div>
       </div>
 
-
+        
 
     </div>
   );
