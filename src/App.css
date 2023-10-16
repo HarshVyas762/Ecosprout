@@ -415,11 +415,68 @@ color: white;
 
  /* sec5 */
 
- @media(max-width:1200px){
+ /* 1200px and 800px*/
+
+ @media(max-width:1200px) and (min-width:800px){
   .section{
     padding-top: 70px;
   }  
+
+  .imgsvg {
+    top: -0.6em;
+    left: 20px;
+    width: 24vw;
 }
+
+.our{
+  font-size: 80px;
+}
+
+.mission{
+  font-size: 80px;
+}
+
+
+.sec2desc{
+  font-size: 15px;
+}
+
+.continents {
+  width: 7vw;
+  right: 17vw;
+}
+
+.volunteers {
+  width: 10vw;
+}
+
+.sec2btn {
+  width: 19vw;
+}
+
+
+.sec3_title{
+  font-size: 6vw;
+}
+
+.boxcol{
+  display: flex;
+  place-content: space-between;
+  flex-direction: row;
+}
+
+.div3 {
+  flex-wrap: wrap;
+}
+
+.sec2img1{
+  width: 37vw;
+}
+}
+
+ /* 1200px and 800px*/
+
+/* 800px */
 
 @media(max-width:800px){
   .section{
@@ -433,11 +490,6 @@ color: white;
   .sec1{
     padding-right: 20px;
   }
-
-  .mod {
-    left: 82vw;
-    top: 12em;
-}
 
 .sec2 .container{
   flex-direction: column;
@@ -478,10 +530,6 @@ color: white;
 
 .sec3_boxmail{
   margin-top: 0;
-}
-
-.mod{
-  display: none;
 }
 
 .menu-item{
@@ -618,3 +666,5 @@ place-content: space-between;
 }
 
 }
+
+/* 800px */

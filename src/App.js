@@ -70,12 +70,12 @@ function App() {
       </div>
 
       <div className='sec2 section'>
-        <div className='container' style={{ display: 'flex', gap: '70px' }}>
+        <div className='container' style={{ display: 'flex', gap: '70px', flexWrap:'wrap' }}>
           <div className='col-lg-5 col-md-5 col-sm-12'>
             <img className='imgsvg' src={sec2svg} alt='' />
             <img className='sec2img1' src={sec2img1} alt='' />
           </div>
-          <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column',gap:'20px' }}>
+          <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column',gap:'20px',paddingLeft:'30px' }}>
             <span  className='our'>OUR</span>
             <span className='mission'>MISSION</span>
             <p className='sec2desc'>At our organization, we are dedicated to cultivating a greener world through a multi-faceted approach that encompasses sustainable practices, tree planting initiatives, and environmental stewardship. Our mission is to foster a harmonious coexistence with nature, recognizing that a thriving planet is essential for the well-being of current and future generations.</p>
@@ -89,10 +89,10 @@ function App() {
       <div className='sec3 section container'>
         <div><span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span></div>
         <div style={{ display: 'flex', placeContent: 'space-between', marginTop: '100px', flexWrap:'wrap' }}>
-          <div className='col-lg-8 col-md-8 col-sm-12'>
+          <div className='col-lg-8 col-md-12 col-sm-12'>
             <img className='map' src={map} alt=''   width= '100%'/>
           </div>
-          <div className='col-lg-2 col-md-2 col-sm-12 boxcol'>
+          <div className='col-lg-2 col-md-12 col-sm-12 boxcol'>
             <div className='sec3box'>
               <span className='sec3_boxtitle'>Volunteer</span>
               <span className='sec3_boxdesc'>Our friendly team is here to help.</span>
