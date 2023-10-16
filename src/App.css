@@ -177,7 +177,7 @@ text-align: center;
 }
 
 /* 3d */
-.mod{
+.modpc{
   position: absolute;
   left: 30vw;
   top: 14em;
@@ -414,6 +414,15 @@ color: white;
 }
 
  /* sec5 */
+
+@media(min-width:1200px){
+  .modmob{
+    display: none;
+  }
+  .mobpc{
+    display: inherit;
+  }
+}
 
  /* 1200px and 800px*/
 
@@ -664,6 +673,16 @@ place-content: space-between;
 
 .sec4_desc{
   width: 100%;
+}
+
+.modmob {
+  left: auto;
+  top: -3em;
+  display: inherit;
+}
+
+.modpc{
+  display: none;
 }
 
 }

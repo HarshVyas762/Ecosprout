@@ -54,9 +54,13 @@ function App() {
               <p className='banner_desc'>Cultivating a greener world through sustainable practices, tree planting initiatives, and environmental stewardship to foster a harmonious coexistence with nature.</p>
               <button className='banner_btn' style={{ marginTop: '42px' }}><span className='btn_txt'>Join Now</span><img className='whitearr' alt='' src={whitearr} style={{ paddingLeft: '10px', height: '12px' }} /></button>
             </div>
-            <div className='mod col-lg-4 col-md-4 col-sm-12'>
+            <div className='modpc col-lg-4 col-md-4 col-sm-12'>
             <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='600px' height='900px'></iframe>
 </div>  
+<div className='modmob col-lg-4 col-md-4 col-sm-12'>
+            <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='600px' height='900px'></iframe>
+</div>  
+
             <div className='col-lg-3 col-md-12 community'>
              <div className='comdiv'>
               <img className='propic' src={propic} alt='' />
