@@ -34,7 +34,7 @@ function App() {
         <div className='container'>
           <div className='header'>
             <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
-            <div className='menu-item col-lg-4 col-md-4'>
+            <div className='menu-item col-lg-6 col-md-6'>
               <p>Home</p>
               <p>About</p>
               <p>Blog</p>
@@ -45,7 +45,7 @@ function App() {
           <div className='div2 section'>
             <div className='div2sub col-md-10'>
               <div className='topv'><img className='topview' src={topview} alt='' /></div>
-              <div><h1 className='bannertitle'>Make it <img className='star1' src={star1} alt='' /><br></br><span style={{ color: '#479C2B' }}><img className='arr' src={arr} alt='' style={{ paddingRight: '10px', marginTop: '0.8em', height: '100px' }} />Green</span> Again</h1> <img className='star2' src={star2} alt='' /></div>
+              <div><h1 className='bannertitle'>Make it <img className='star1' src={star1} alt='' /><br></br><span style={{ color: '#479C2B' }}><img className='arr' src={arr} alt='' />Green</span> Again</h1> <img className='star2' src={star2} alt='' /></div>
             </div>
           </div>
 
@@ -57,10 +57,12 @@ function App() {
             <div className='mod col-lg-4 col-md-4 col-sm-12'>
             <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='600px' height='900px'></iframe>
 </div>  
-            <div className='col-lg-3 col-md-5' style={{ alignItems: 'end', display: 'flex', flexDirection: 'column' }}>
+            <div className='col-lg-3 col-md-12 community'>
+             <div className='comdiv'>
               <img className='propic' src={propic} alt='' />
               <p style={{ fontSize: '18px', fontWeight: '900' }}>Join Our Community</p>
-              <img className='topview2' src={topview2} alt='' style={{ width: '19em', height: '96px', borderRadius: '80px', marginTop: '20px' }} />
+              </div>
+              <img className='topview2' src={topview2} alt='' />
             </div>
           </div>
 
@@ -112,7 +114,7 @@ function App() {
 
       <div className='sec4 section container'>
         <div className='sec4div1'>
-          <div className='col-md-3 col-md-3 col-sm-12' style={{ textAlign: 'left' }}>
+          <div className='col-md-3 col-md-3 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
             <span className='sec4_title'>Go Green!</span>
             <p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
           </div>
