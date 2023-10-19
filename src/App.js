@@ -18,9 +18,14 @@ import sec4img3 from './img/sec4img3.svg';
 import sec4img4 from './img/sec4img4.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet } from "react-helmet";
+import Sidebar from './Sidebar';
 // import ThreeScene from './components/ThreeScene';
 
 function App() {
+
+  const Home = () => <div>Home Page Content</div>;
+const About = () => <div>About Page Content</div>;
+const Contact = () => <div>Contact Page Content</div>;
 
   return (
     <div className="App">
@@ -29,10 +34,15 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
 
+        {/* routes */}
+
+    {/* routes */}
+
       <div className="sec1">
         <div className='container'>
           <div className='header'>
             <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
+            <Sidebar />
             <div className='menu-item col-lg-6 col-md-6'>
               <p>Home</p>
               <p>About</p>
