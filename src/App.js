@@ -22,10 +22,36 @@ import React, { useRef,useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import './loader.scss';
 import emailjs from '@emailjs/browser';
+import './btn.css'
 
 // import ThreeScene from './components/ThreeScene';
 
 function App() {
+
+
+  const [inViewport, setInViewport] = useState(false);
+
+  // Function to check if the element is in the viewport
+  const handleScroll = () => {
+    const title = document.querySelector('.home-title'); // Verify that .home-title exists
+    if (title) {
+      const rect = title.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      setInViewport(isVisible);
+    }
+  };
+
+  // Add a scroll event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   const [loading, setLoading] = useState(true);
 
@@ -61,7 +87,6 @@ function App() {
         
       </Helmet>
 
-      <div className="loader-container">
   {loading ? (
     <div className="loading">
       <div className="arc"></div>
@@ -121,10 +146,13 @@ function App() {
             <img className='sec2img1' src={sec2img1} alt='' />
           </div>
           <div className='col-lg-6 col-md-6 col-sm-12 ourmission' style={{ display: 'flex', flexDirection: 'column',gap:'20px',paddingLeft:'30px' }}>
+          <h1 className={`home-title ${inViewport ? 'in-viewport' : ''}`}>
             <span  className='our'>OUR</span>
             <span className='mission'>MISSION</span>
+          </h1>
             <p className='sec2desc'>At our organization, we are dedicated to cultivating a greener world through a multi-faceted approach that encompasses sustainable practices, tree planting initiatives, and environmental stewardship. Our mission is to foster a harmonious coexistence with nature, recognizing that a thriving planet is essential for the well-being of current and future generations.</p>
-            <button className='sec2btn'>Help Us!</button>
+            {/* <button className='sec2btn'>Help Us!</button> */}
+            <div class="btn from-center">Help Us!</div>
             <img className='continents' src={continents} alt='' />
             <img className='volunteers' src={volunteers} alt='' />
           </div>
@@ -160,8 +188,11 @@ function App() {
       <div className='sec4 section container'>
         <div className='sec4div1'>
           <div className='col-md-3 col-md-12 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
-            <span className='sec4_title'>Go Green!</span>
-            <p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
+          <h1 className={`home-title ${inViewport ? 'in-viewport' : 'go-green'}`}>
+              <span className='sec4_title'>Go Green!</span>
+            <span><p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
+            </span>
+          </h1>
           </div>
           <div className='col-md-2 col-md-2 col-sm-12'>
             <img className='sec4img1' src={sec4img1} alt='' />
@@ -220,7 +251,6 @@ function App() {
     </>
 
   )}
-</div>  
 
     </div>
   );
