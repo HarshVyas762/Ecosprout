@@ -39,7 +39,6 @@ body {
 
 .menu-item{
   align-items: center;
-  gap: 50px;
   justify-content: center;
 }
 
@@ -53,8 +52,11 @@ height: 50px;
 
 
 .menu-item a:hover{
-  border-bottom: 1px solid #479C2B;
-  color:#479C2B;
+  background: #479C2B;
+  border-radius: 9em;
+  padding: 10px;
+  color: white !important;
+  transition-duration: 0.7s;
 }
 
 /* sec1 */
@@ -450,7 +452,8 @@ color: white;
 
 
  .menu-item{
-  display: inherit;
+  display: flex;
+  place-content: space-evenly;
 }
 
 .sidebar{
