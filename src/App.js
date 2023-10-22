@@ -18,32 +18,64 @@ import sec4img3 from './img/sec4img3.svg';
 import sec4img4 from './img/sec4img4.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet } from "react-helmet";
+import React, { useRef,useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
+import './loader.scss';
+import emailjs from '@emailjs/browser';
+
 // import ThreeScene from './components/ThreeScene';
 
 function App() {
 
-  const Home = () => <div>Home Page Content</div>;
-const About = () => <div>About Page Content</div>;
-const Contact = () => <div>Contact Page Content</div>;
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false); 
+    }, 2000);
+  }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_tx8tdrh', 'template_qjpx87u', form.current, '4RDdZqPIfVfgn3cN8')
+      .then((result) => {
+          console.log(result.text);
+          const successMessage = document.getElementById('successMessage');
+          if (successMessage) {
+            successMessage.style.display = 'block';
+          }
+      }, (error) => {
+          console.log(error.text);
+      });
+  };  
 
   return (
+
     <div className="App">
  <Helmet>
-        <title>Page Title</title>
+        <title>EcoSprout</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
       </Helmet>
 
-        {/* routes */}
-
-    {/* routes */}
-
+      <div className="loader-container">
+  {loading ? (
+    <div className="loading">
+      <div className="arc"></div>
+      <div className="arc"></div>
+      <div className="arc"></div>
+    </div>
+  ) : (
+    <>
       <div className="sec1">
         <div className='container'>
           <div className='header'>
             <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
             <Sidebar />
-            <div className='menu-item col-lg-6 col-md-6'>
+            <div className='menu-item col-lg-6 col-md-7'>
               <p>Home</p>
               <p>About</p>
               <p>Blog</p>
@@ -59,18 +91,18 @@ const Contact = () => <div>Contact Page Content</div>;
           </div>
 
           <div className="div3">
-            <div className='col-lg-3 col-md-5 div3sub'>
+            <div className='col-lg-4 col-md-5 div3sub'>
               <p className='banner_desc'>Cultivating a greener world through sustainable practices, tree planting initiatives, and environmental stewardship to foster a harmonious coexistence with nature.</p>
               <button className='banner_btn' style={{ marginTop: '42px' }}><span className='btn_txt'>Join Now</span><img className='whitearr' alt='' src={whitearr} style={{ paddingLeft: '10px', height: '12px' }} /></button>
             </div>
-            <div className='modpc col-lg-4 col-md-4 col-sm-12'>
+            {/* <div className='modpc col-lg-4 col-md-4 col-sm-12' style={{display:'none'}}>
             <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='600px' height='900px'></iframe>
 </div>  
-<div className='modmob col-lg-4 col-md-4 col-sm-12'>
+            <div className='modmob col-lg-4 col-md-4 col-sm-12' style={{display:'none'}}>
             <iframe src='https://my.spline.design/plant02copy-f16d9c5b030775e08d0354a699dc29ca/' aria-hidden="true" width='200px' height='450px'></iframe>
-</div>  
+</div>   */}
 
-            <div className='col-lg-3 col-md-12 community'>
+            <div className='col-lg-3 col-md-5 community'>
              <div className='comdiv'>
               <img className='propic' src={propic} alt='' />
               <p style={{ fontSize: '18px', fontWeight: '900' }}>Join Our Community</p>
@@ -88,7 +120,7 @@ const Contact = () => <div>Contact Page Content</div>;
             <img className='imgsvg' src={sec2svg} alt='' />
             <img className='sec2img1' src={sec2img1} alt='' />
           </div>
-          <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column',gap:'20px',paddingLeft:'30px' }}>
+          <div className='col-lg-6 col-md-6 col-sm-12 ourmission' style={{ display: 'flex', flexDirection: 'column',gap:'20px',paddingLeft:'30px' }}>
             <span  className='our'>OUR</span>
             <span className='mission'>MISSION</span>
             <p className='sec2desc'>At our organization, we are dedicated to cultivating a greener world through a multi-faceted approach that encompasses sustainable practices, tree planting initiatives, and environmental stewardship. Our mission is to foster a harmonious coexistence with nature, recognizing that a thriving planet is essential for the well-being of current and future generations.</p>
@@ -101,7 +133,7 @@ const Contact = () => <div>Contact Page Content</div>;
 
       <div className='sec3 section container'>
         <div><span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span></div>
-        <div style={{ display: 'flex', placeContent: 'space-between', marginTop: '100px', flexWrap:'wrap' }}>
+        <div className='sec3subdiv'>
           <div className='col-lg-8 col-md-12 col-sm-12'>
             <img className='map' src={map} alt=''   width= '100%'/>
           </div>
@@ -154,38 +186,41 @@ const Contact = () => <div>Contact Page Content</div>;
           <div className='col-lg-6 col-md-12 col-sm-12 sec5col1'>
             <span className='sec5_title'>Any Questions ?</span>
             <p className='sec5_desc'>You can reach us anytime at <span style={{ color: '#479C2B' }}>support@ecosprout.com</span></p>
-            <form className='form'>
+            <form className='form' ref={form} onSubmit={sendEmail}>
               <div style={{ display: 'flex', placeContent: 'space-between',flexWrap:'wrap',rowGap:'30px' }}>
                 <div className='form_field col-lg-5 col-md-5 col-sm-12'>
                   <label>First name</label>
-                  <input type="text" placeholder='First name' className='form_input' ></input>
+                  <input type="text" placeholder='First name' className='form_input' name ="fname"/>
                 </div>
                 <div className='form_field col-lg-6 col-md-6 col-sm-12'>
                   <label>Last name</label>
-                  <input type="text" placeholder='Last name' className='form_input'></input>
+                  <input type="text" placeholder='Last name' className='form_input' name ="lname"/>
                 </div>
               </div>
               <div className='form_field'>
                 <label>Email</label>
-                <input type="Email" placeholder='Email' className='form_input'></input>
+                <input type="Email" placeholder='Email' className='form_input' name ="email" />
               </div>
               <div className='form_field'>
                 <label>Phone Number</label>
-                <input type="Number" placeholder='First name' className='form_input'></input>
+                <input type="Number" placeholder='First name' className='form_input' name ="num" />
               </div>
               <div className='form_field'>
                 <label>Message</label>
-                <textarea type="text" placeholder='Leave us a message...' className='form_input' id="message"></textarea>
+                <textarea type="text" placeholder='Leave us a message...' className='form_input' name ="message" id="message" />
               </div>
               <div>
-                <button type='Submit' className='submit'>Get Started</button>
+                <button type='Submit' className='submit' value= "Send">Get Started</button>
               </div>
             </form>
+            <div id="successMessage" style={{ display: 'none' }}>Email sent successfully!</div>
           </div>
         </div>
       </div>
+    </>
 
-        
+  )}
+</div>  
 
     </div>
   );

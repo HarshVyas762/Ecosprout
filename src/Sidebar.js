@@ -16,6 +16,13 @@ const Sidebar = () => {
   };
 
   return (
+    <div>
+          <div className="sidebar-toggle" onClick={toggleSidebar}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-toggle" onClick={toggleSidebar}>
         <div className="bar"></div>
@@ -70,6 +77,7 @@ const Sidebar = () => {
           </ScrollLink>
         </li>
       </ul>
+    </div>
     </div>
   );
 };

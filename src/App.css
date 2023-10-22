@@ -12,7 +12,7 @@ body {
 
 @media(max-width:1200px){
   .section{
-    padding-top: 70px !important;
+    padding-top: 90px !important;
   }  
 }
 
@@ -34,9 +34,13 @@ body {
 }
 
 .menu-item{
-  display: flex;
-  place-content: space-between;
   align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.menu-item p{
+  margin-bottom: 0;
 }
 
 /* .menu-item p{
@@ -45,9 +49,9 @@ height: 50px;
 
 
 .menu-item p:hover{
-  border-bottom: 1px solid #000;
-  padding-bottom: 5px;
-  transition-duration: 0.7s;
+  border-bottom: 1px solid #479C2B;
+  transition-duration: 0.5s;
+  color:#479C2B;
 }
 
 /* sec1 */
@@ -194,11 +198,18 @@ text-align: center;
 
 /* sec2 */
 
+.ourmission{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px; 
+}
+
 .imgsvg{
   position: absolute;
   left: 0;
   width: 215px;
-  top: 61em;
+  top: 1em;
 }
 
 .sec2btn{
@@ -261,9 +272,21 @@ margin-top: 20px;
   height: auto;
   line-height: normal;
 }
+
+.sec2img1{
+  width: -webkit-fill-available;
+}
+
 /* sec2 */
 
 /* sec3 */
+
+.sec3subdiv{
+  display: flex;
+  place-content: space-between;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
 
 .boxcol{
   display: flex;
@@ -317,7 +340,7 @@ width: 150px;
   align-items: center;
   row-gap: 20px;
   text-align: center;
-  place-content: space-around;
+  place-content: space-between;
 }
 
 .sec4_title{
@@ -458,12 +481,62 @@ display: none;
 
   .menu-item{
     display: inherit;
+    gap: 20px;
   }
-  
+
+  .topview {
+    width: 170px;
+    height: 67px;
+    margin-top: 35px;
+    border-radius: 80px;
+}
+
+.topview2{
+  width: 170px;
+  height: 67px;
+}
+
+.star1 {
+  top: 262px;
+  right: 23vw;
+  height: 32px;
+}
+
+.star2{
+  height: 20px;
+  right: 11vw;
+  top: 26em;
+}
+
+.sec2 .container {
+  display: flex;
+  gap: 30px;
+}
+
+.our {
+  line-height: 65px;
+}
+
+.bannertitle {
+  font-size: 9.2vw;
+  line-height: 128px;
+}
+
+.arr {
+  height: 70px;
+}
+
   .sidebar{
   display: none;
   }
+
+  .sec5col1{
+    margin-left: 0;
+  }
   
+  .sec3{
+    overflow-wrap: anywhere;
+  }
 
   .imgsvg {
     top: -0.6em;
@@ -477,11 +550,11 @@ display: none;
 } */
 
 .our{
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .mission{
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 
@@ -496,21 +569,26 @@ display: none;
 
 .volunteers {
   width: 10vw;
+  right: 6vw;
 }
 
 .sec2btn {
   width: 19vw;
 }
 
+.logo{
+  height: 50px;
+}
+
 
 .sec3_title{
-  font-size: 6vw;
+  font-size: 2.2rem;
 }
 
 .boxcol{
   display: flex;
   place-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .div3 {
@@ -524,7 +602,11 @@ display: none;
 
 .div3sub{
   z-index: 9999;
-  background: linear-gradient(to right,#F2F2F2 53.5%, white 46%);
+  background: none;
+}
+
+.modpc {
+  left: 21vw;
 }
 
 .sec2btn {
@@ -565,9 +647,14 @@ display: none;
  flex-direction: row;
 }
 
+.ourmission{
+  padding-left: 0px; 
+}
+
+
 .sec2img1{
   width: -webkit-fill-available;
-  height: 550px;
+  height: 500px;
 }
 
 .container{
@@ -587,6 +674,7 @@ display: none;
 .boxcol{
   gap: 30px;
   margin-top: 30px;
+  flex-direction: row;
   width: -webkit-fill-available;
 }
 
@@ -613,13 +701,13 @@ display: none;
 }
 
 .our{
-  font-size: 13vw;
+  font-size: 12vw;
   line-height: initial;
   margin-top: 50px;
 }
 
 .mission{
-  font-size: 13vw;
+  font-size: 12vw;
 }
 
 .sec3_title{
@@ -646,14 +734,14 @@ p{
 
 .volunteers {
   right: 7vw;
-  top: 47em;
-  width: 70px;
+  top: 44em;
+  width: 65px;
 }
 
 .continents {
   right: 26vw;
-  top: 42em;
-  width: 60px;
+  top: 39em;
+  width: 55px;
 }
 
 .imgsvg {
@@ -780,3 +868,63 @@ display: inherit;
 }
 
 /* 800px */
+
+
+#successMessage{
+  display: block;
+  font-size: 22px;
+  margin-top: 30px;
+  border-bottom: 1px solid #489c2a;
+  width: max-content;
+}
+
+/* Animation */
+
+.our{
+  transform: translate(-50%, -50%)
+}
+
+.rev-block{
+  position: absolute;
+}
+.rev-block span {
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+.rev-block:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #479C2B;
+  animation: rev-block 1.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+  animation-delay: 1s;
+}
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation */
