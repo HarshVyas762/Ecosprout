@@ -6,6 +6,10 @@ h1,h2,h3,h4,h5,h6,p,span{
   padding-top: 100px;
 }
 
+a {
+  cursor: default;
+}
+
 body {
   font-family: 'Montserrat';
 }
@@ -48,9 +52,8 @@ height: 50px;
 } */
 
 
-.menu-item p:hover{
+.menu-item a:hover{
   border-bottom: 1px solid #479C2B;
-  transition-duration: 0.5s;
   color:#479C2B;
 }
 

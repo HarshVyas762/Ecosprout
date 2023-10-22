@@ -73,6 +73,17 @@ const Sidebar = () => {
             duration={500}
             onClick={closeSidebar}
           >
+            Endeavours
+          </ScrollLink>
+        </li>
+        <li>
+        <ScrollLink
+            to="sec5"
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={closeSidebar}
+          >
             Contact
           </ScrollLink>
         </li>

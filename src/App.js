@@ -23,6 +23,7 @@ import Sidebar from './Sidebar';
 import './loader.scss';
 import emailjs from '@emailjs/browser';
 import './btn.css'
+import { Link as ScrollLink, Element } from "react-scroll"; 
 
 // import ThreeScene from './components/ThreeScene';
 
@@ -101,11 +102,40 @@ function App() {
             <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
             <Sidebar />
             <div className='menu-item col-lg-6 col-md-7'>
-              <p>Home</p>
-              <p>About</p>
-              <p>Blog</p>
-              <p>Endeavours</p>
-              <p>Contact Us</p>
+            <ScrollLink
+            to="sec1"
+            smooth={true}
+            duration={500} // You can adjust the scroll duration
+          >
+            Home
+          </ScrollLink>
+              <ScrollLink
+            to="sec2"
+            smooth={true}
+            duration={500}>
+            About
+          </ScrollLink>
+          <ScrollLink
+            to="sec3"
+            smooth={true}
+            duration={500}
+          >
+            Blog
+          </ScrollLink>
+          <ScrollLink
+            to="sec4"
+            smooth={true}
+            duration={500}
+          >
+            Endeavours
+          </ScrollLink>
+          <ScrollLink
+            to="sec5"
+            smooth={true}
+            duration={500}
+          >
+            Contact
+          </ScrollLink>
             </div>
           </div>
           <div className='div2 section'>
