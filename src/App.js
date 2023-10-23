@@ -164,8 +164,11 @@ function App() {
                 <div className='modpc col-lg-4 col-md-4 col-sm-12'>
                   <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='600px' height='900px'></iframe>
                 </div>
+                <div className='modtab col-lg-4 col-md-4 col-sm-12'>
+                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='473px' height='654px'></iframe>
+                </div>
                 <div className='modmob col-lg-4 col-md-4 col-sm-12'>
-                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='200px' height='450px'></iframe>
+                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='398px' height='468px'></iframe>
                 </div>
 
                 <div className='col-lg-3 col-md-5 community'>

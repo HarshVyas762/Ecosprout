@@ -465,6 +465,11 @@ display: none;
   .modmob{
     display: none;
   }
+
+  .modtab{
+    display: none;
+  }
+
   .mobpc{
     display: inherit;
   }
@@ -484,6 +489,18 @@ display: none;
   .section{
     padding-top: 70px;
   }  
+
+  .modpc, .modmob{
+    display: none;
+  }
+
+  .modtab{
+    display: inherit;
+    left: -26vw;
+    position: absolute;
+    top: 4em;
+    z-index: 1;
+    }
 
   .menu-item{
     display: inherit;
@@ -834,10 +851,14 @@ place-content: space-between;
 
 .modmob {
   display: inherit;
-  left: 27vw;
+  left: -26vw;
   position: absolute;
-  top: 9em;
+  top: 4em;
   z-index: 1;
+}
+
+.modtab{
+  display: none;
 }
 
 .modpc{

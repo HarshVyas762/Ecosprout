@@ -66,3 +66,18 @@
     transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
   }
 }
+
+
+@media(max-width:800px) and (min-width:1200px){
+  .loading {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media(max-width:800px){
+  .loading {
+    width: 5rem;
+    height: 5rem;
+  }
+}
