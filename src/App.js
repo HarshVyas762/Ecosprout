@@ -23,11 +23,20 @@ import Sidebar from './Sidebar';
 import './loader.scss';
 import emailjs from '@emailjs/browser';
 import './btn.css'
+import './submit.css'
 import { Link as ScrollLink, Element } from "react-scroll";
 
 // import ThreeScene from './components/ThreeScene';
 
 function App() {
+
+  const [buttonText, setButtonText] = useState('Submit');
+  const [isActive, setIsActive] = useState(false);
+
+  const handleButtonClick = () => {
+    setButtonText('Thanks');
+    setIsActive(true);
+  };
 
 
   const [inViewport, setInViewport] = useState(false);
@@ -74,6 +83,7 @@ function App() {
         if (successMessage) {
           successMessage.style.display = 'block';
         }
+        handleButtonClick();
       }, (error) => {
         console.log(error.text);
       });
@@ -105,35 +115,36 @@ function App() {
                   <ScrollLink
                     to="sec1"
                     smooth={true}
-                    duration={500} // You can adjust the scroll duration
-                  >
+                    duration={500}
+                    offset={100}>
                     Home
                   </ScrollLink>
                   <ScrollLink
                     to="sec2"
                     smooth={true}
-                    duration={500}>
+                    duration={500}
+                    offset={100}>
                     About
                   </ScrollLink>
                   <ScrollLink
                     to="sec3"
                     smooth={true}
                     duration={500}
-                  >
+                    offset={100}>
                     Blog
                   </ScrollLink>
                   <ScrollLink
                     to="sec4"
                     smooth={true}
                     duration={500}
-                  >
+                    offset={100}>
                     Endeavours
                   </ScrollLink>
                   <ScrollLink
                     to="sec5"
                     smooth={true}
                     duration={500}
-                  >
+                    offset={100}>
                     Contact
                   </ScrollLink>
                 </div>
@@ -151,11 +162,11 @@ function App() {
                   <button className='banner_btn' style={{ marginTop: '42px' }}><span className='btn_txt'>Join Now</span><img className='whitearr' alt='' src={whitearr} style={{ paddingLeft: '10px', height: '12px' }} /></button>
                 </div>
                 <div className='modpc col-lg-4 col-md-4 col-sm-12'>
-            <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='600px' height='900px'></iframe>
-</div>  
-            <div className='modmob col-lg-4 col-md-4 col-sm-12'>
-            <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='200px' height='450px'></iframe>
-</div>  
+                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='600px' height='900px'></iframe>
+                </div>
+                <div className='modmob col-lg-4 col-md-4 col-sm-12'>
+                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='200px' height='450px'></iframe>
+                </div>
 
                 <div className='col-lg-3 col-md-5 community'>
                   <div className='comdiv'>
@@ -182,7 +193,7 @@ function App() {
                 </h1>
                 <p className='sec2desc'>At our organization, we are dedicated to cultivating a greener world through a multi-faceted approach that encompasses sustainable practices, tree planting initiatives, and environmental stewardship. Our mission is to foster a harmonious coexistence with nature, recognizing that a thriving planet is essential for the well-being of current and future generations.</p>
                 {/* <button className='sec2btn'>Help Us!</button> */}
-                <div class="btn from-center">Help Us!</div>
+                <div className="btn from-center">Help Us!</div>
                 <img className='continents' src={continents} alt='' />
                 <img className='volunteers' src={volunteers} alt='' />
               </div>
@@ -271,7 +282,15 @@ function App() {
                     <textarea type="text" placeholder='Leave us a message...' className='form_input' name="message" id="message" />
                   </div>
                   <div>
-                    <button type='Submit' className='submit' value="Send">Get Started</button>
+                    {/* <button type='Submit' className='submit' value="Send">Get Started</button> */}
+                    <button type='submit' className={`submit ${isActive ? 'active' : ''}`} value="Send">
+                      {buttonText}
+                      <div className="check-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                          <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                      </div>
+                    </button>
                   </div>
                 </form>
                 <div id="successMessage" style={{ display: 'none' }}>Email sent successfully!</div>
