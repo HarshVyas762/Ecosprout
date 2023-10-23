@@ -440,7 +440,7 @@ height: 44px;
 .submit{
   width: 167px;
 height: 56px;
-padding: 16px, 32px, 16px, 32px;
+padding: 14px;
 border-radius: 100px;
 gap: 8px;
 border: 1px solid black;
@@ -680,7 +680,7 @@ display: none;
 .boxcol{
   gap: 30px;
   margin-top: 30px;
-  flex-direction: row;
+  flex-direction: column;
   width: -webkit-fill-available;
 }
 
@@ -718,11 +718,11 @@ display: none;
 
 .sec3_title{
   font-family: Inter;
-  font-size: 24px;
+  font-size: 1.4rem;
   line-height: 50px;
   letter-spacing: -1px;
 }
-
+x
 .sec5col1 {
   margin-left: auto;
 }
