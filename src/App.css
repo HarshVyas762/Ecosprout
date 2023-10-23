@@ -496,10 +496,11 @@ display: none;
 
   .modtab{
     display: inherit;
-    left: -26vw;
+    left: 23%;
     position: absolute;
-    top: 4em;
+    top: 12em;
     z-index: 1;
+    right: 50%;
     }
 
   .menu-item{
@@ -851,9 +852,10 @@ place-content: space-between;
 
 .modmob {
   display: inherit;
-  left: -26vw;
+  left: 3vw;
   position: absolute;
   top: 4em;
+  right: 0;
   z-index: 1;
 }
 
@@ -897,6 +899,18 @@ display: inherit;
 /* 800px */
 
 
+/* 400px */
+
+.modmob {
+  display: inherit;
+  left: -15vw;
+  position: absolute;
+  top: 4em;
+  right: 0;
+  z-index: 1;
+}
+
+/* 400px */
 #successMessage{
   display: block;
   font-size: 22px;
