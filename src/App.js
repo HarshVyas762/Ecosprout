@@ -168,7 +168,7 @@ function App() {
                   <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='473px' height='694px'></iframe>
                 </div>
                 <div className='modmob col-lg-4 col-md-4 col-sm-12'>
-                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='358px' height='504px'></iframe>
+                  <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='360px' height='504px'></iframe>
                 </div>
 
                 <div className='col-lg-3 col-md-5 community'>
