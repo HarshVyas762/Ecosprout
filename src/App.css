@@ -894,6 +894,12 @@ place-content: space-between;
 display: inherit;
 }
 
+#canvas3d{
+    width: 551px;
+    height: 527px;
+
+}
+
 }
 
 /* 800px */
