@@ -852,10 +852,10 @@ place-content: space-between;
 
 .modmob {
   display: inherit;
-  left: 3vw;
+  /* left: 3vw; */
   position: absolute;
   top: 4em;
-  right: 0;
+  /* right: 0; */
   z-index: 1;
 }
 
@@ -903,10 +903,10 @@ display: inherit;
 
 .modmob {
   display: inherit;
-  left: -15vw;
+  left: -25vw;
   position: absolute;
   top: 4em;
-  right: 0;
+  /* right: 0; */
   z-index: 1;
 }
 
