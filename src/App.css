@@ -895,8 +895,8 @@ display: inherit;
 }
 
 #canvas3d{
-    width: 551px;
-    height: 527px;
+    width: 551px !important;
+    height: 527px !important;
 
 }
 
