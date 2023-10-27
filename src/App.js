@@ -167,9 +167,9 @@ function App() {
                 <div className='modtab col-lg-5 col-md-5 col-sm-12'>
                   <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='473px' height='694px'></iframe>
                 </div>
-                {/* <div className='modmob col-lg-4 col-md-4 col-sm-12'>
+                <div className='modmob col-lg-4 col-md-4 col-sm-12'>
                   <iframe src='https://my.spline.design/untitled-0a2e7be5fee6d251d2f2741419a56a71/' aria-hidden="true" width='398px' height='527px'></iframe>
-                </div> */}
+                </div>
 
                 <div className='col-lg-3 col-md-5 community'>
                   <div className='comdiv'>
@@ -179,7 +179,6 @@ function App() {
                   <img className='topview2' src={topview2} alt='' />
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -202,6 +201,8 @@ function App() {
               </div>
             </div>
           </div>
+
+          
 
           <div className='sec3 section container'>
             <div><span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span></div>
@@ -252,7 +253,6 @@ function App() {
               </div>
             </div>
           </div>
-
 
           <div className='sec5 container' style={{ marginTop: '100px', marginBottom: '100px' }}>
             {/* <ThreeModelViewer /> */}
