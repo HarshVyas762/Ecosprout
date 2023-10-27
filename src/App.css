@@ -854,7 +854,7 @@ place-content: space-between;
   display: inherit;
   /* left: 3vw; */
   position: absolute;
-  top: 4em;
+  top: 2em;
   /* right: 0; */
   z-index: 1;
 }
@@ -894,11 +894,6 @@ place-content: space-between;
 display: inherit;
 }
 
-#canvas3d{
-    width: 551px !important;
-    height: 527px !important;
-
-}
 
 }
 
@@ -911,7 +906,7 @@ display: inherit;
   display: inherit;
   left: -25vw;
   position: absolute;
-  top: 4em;
+  top: 2em;
   /* right: 0; */
   z-index: 1;
 }
