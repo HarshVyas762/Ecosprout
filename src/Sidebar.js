@@ -36,7 +36,7 @@ const Sidebar = () => {
           <ScrollLink
             to="sec1"
             smooth={true}
-            offset={-100} // Adjust this offset to fine-tune the scroll position
+            offset={100} // Adjust this offset to fine-tune the scroll position
             duration={500} // You can adjust the scroll duration
             onClick={closeSidebar}
           >
@@ -47,7 +47,7 @@ const Sidebar = () => {
           <ScrollLink
             to="sec2"
             smooth={true}
-            offset={-100}
+            offset={100}
             duration={500}
             onClick={closeSidebar}
           >
@@ -58,7 +58,7 @@ const Sidebar = () => {
           <ScrollLink
             to="sec3"
             smooth={true}
-            offset={-100}
+            offset={100}
             duration={500}
             onClick={closeSidebar}
           >
@@ -69,7 +69,7 @@ const Sidebar = () => {
           <ScrollLink
             to="sec4"
             smooth={true}
-            offset={-100}
+            offset={100}
             duration={500}
             onClick={closeSidebar}
           >
@@ -80,7 +80,7 @@ const Sidebar = () => {
         <ScrollLink
             to="sec5"
             smooth={true}
-            offset={-100}
+            offset={100}
             duration={500}
             onClick={closeSidebar}
           >
