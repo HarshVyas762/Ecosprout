@@ -491,7 +491,7 @@ display: none;
   }  
 
   .modpc, .modmob{
-    display: none;
+    display: none !important;
   }
 
   .modtab{
