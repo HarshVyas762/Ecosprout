@@ -25,6 +25,7 @@ import emailjs from '@emailjs/browser';
 import './btn.css'
 import './submit.css'
 import { Link as ScrollLink, Element } from "react-scroll";
+import footerlogo from './img/footerlogo.png'
 
 // import ThreeScene from './components/ThreeScene';
 
@@ -95,7 +96,6 @@ function App() {
       <Helmet>
         <title>EcoSprout</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
       </Helmet>
 
       {loading ? (
@@ -112,41 +112,11 @@ function App() {
                 <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
                 <Sidebar />
                 <div className='menu-item col-lg-6 col-md-7'>
-                  <ScrollLink
-                    to="sec1"
-                    smooth={true}
-                    duration={500}
-                    offset={100}>
-                    Home
-                  </ScrollLink>
-                  <ScrollLink
-                    to="sec2"
-                    smooth={true}
-                    duration={500}
-                    offset={100}>
-                    About
-                  </ScrollLink>
-                  <ScrollLink
-                    to="sec3"
-                    smooth={true}
-                    duration={500}
-                    offset={100}>
-                    Blog
-                  </ScrollLink>
-                  <ScrollLink
-                    to="sec4"
-                    smooth={true}
-                    duration={500}
-                    offset={100}>
-                    Endeavours
-                  </ScrollLink>
-                  <ScrollLink
-                    to="sec5"
-                    smooth={true}
-                    duration={500}
-                    offset={100}>
-                    Contact
-                  </ScrollLink>
+                  <ScrollLink to="sec1" smooth={true} duration={500} offset={100}>Home</ScrollLink>
+                  <ScrollLink to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink>
+                  <ScrollLink to="sec3" smooth={true} duration={500} offset={100}>Blog</ScrollLink>
+                  <ScrollLink to="sec4" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink>
+                  <ScrollLink to="sec5" smooth={true} duration={500} offset={100}>Contact</ScrollLink>
                 </div>
               </div>
               <div className='div2 section'>
@@ -202,8 +172,6 @@ function App() {
             </div>
           </div>
 
-          
-
           <div className='sec3 section container'>
             <div><span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span></div>
             <div className='sec3subdiv'>
@@ -232,7 +200,7 @@ function App() {
 
           <div className='sec4 section container'>
             <div className='sec4div1'>
-              <div className='col-md-3 col-md-12 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
+              <div className='col-md-3 col-md-3 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
                 <h1 className={`home-title ${inViewport ? 'in-viewport' : 'go-green'}`}>
                   <span className='sec4_title'>Go Green!</span>
                   <span><p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
@@ -300,8 +268,38 @@ function App() {
               </div>
             </div>
           </div>
-        </>
 
+          <div className='footer' style={{ marginTop: '100px', padding: '100px 0' }}>
+            <div className='container'>
+              <div style={{ display: 'flex', placeContent: 'space-between' }}>
+                <div className='col-lg-8 col-md-8 col-sm-12'>
+                  <span id='footertitle'>Cultivating a Greener world</span>
+                  <div className='col-lg-8 col-md-8 col-sm-12'><p style={{ color: 'white', marginTop: '20px' }}>Cultivating a greener world through sustainable practices, tree planting initiatives, and environmental stewardship to foster a harmonious coexistence with nature.</p>
+                  </div>
+                </div>
+                <div className='col-lg-2 col-md-2 col-sm-12'>
+                  <button id='footerbtn'>Join Us Now</button>
+                </div>
+              </div> 
+
+              <div style={{ display: 'flex', marginTop: '100px' }}>
+                <div className='col-lg-6 col-md-6 col-sm-12'>
+                  <img src={footerlogo} />
+                  <p id='logodesc'>Inspiring change, one article at a time. Hub for insightful content, dedicated to cultivating a greener world. Dive into sustainability, tree planting initiatives, and environmental stewardship as we explore the path to a harmonious coexistence with nature. Join us on this journey toward a more eco-conscious tomorrow!</p>
+                </div>
+                <div style={{ display: 'flex', gap: '20px', placeContent: 'FLEX-END' }} className='col-lg-6 col-md-6 col-sm-12'>
+                  <div>
+                    <p className='footersubmenu'>Company</p>
+                    <p className='footer_menulinks'>Home</p>
+                    <p className='footer_menulinks'>About Us</p>
+                    <p className='footer_menulinks'>Endeavours</p>
+                    <p className='footer_menulinks'>Contact Us</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
       )}
 
     </div>
