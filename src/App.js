@@ -18,7 +18,7 @@ import sec4img3 from './img/sec4img3.svg';
 import sec4img4 from './img/sec4img4.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet } from "react-helmet";
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, Suspense } from 'react';
 import Sidebar from './Sidebar';
 import './loader.scss';
 import emailjs from '@emailjs/browser';
@@ -26,6 +26,9 @@ import './btn.css'
 import './submit.css'
 import { Link as ScrollLink, Element } from "react-scroll";
 import footerlogo from './img/footerlogo.png'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import Plant from './components/Plant'
 
 // import ThreeScene from './components/ThreeScene';
 
@@ -299,6 +302,15 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* <div>
+            <Canvas>
+              <Suspense fallback={null}>
+                <Plant />
+              </Suspense>
+            </Canvas>
+            </div> */}
+
         </>
       )}
 
