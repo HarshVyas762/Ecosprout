@@ -117,9 +117,8 @@ function App() {
                 <div className='menu-item col-lg-6 col-md-7'>
                   <ScrollLink to="sec1" smooth={true} duration={500} offset={100}>Home</ScrollLink>
                   <ScrollLink to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink>
-                  <ScrollLink to="sec3" smooth={true} duration={500} offset={100}>Blog</ScrollLink>
                   <ScrollLink to="sec4" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink>
-                  <ScrollLink to="sec5" smooth={true} duration={500} offset={100}>Contact</ScrollLink>
+                  <ScrollLink to="sec5" smooth={true} duration={500} offset={100}>Contact Us</ScrollLink>
                 </div>
               </div>
               <div className='div2 section'>
@@ -225,11 +224,12 @@ function App() {
             </div>
           </div>
 
-          <div className='sec5 container' style={{ marginTop: '100px', marginBottom: '100px' }}>
+          <div className='container' style={{height: '74em'}}>
             {/* <ThreeModelViewer /> */}
             {/* <canvas id="canvas3d"></canvas> */}
-            <div style={{ display: 'flex' }}>
-              <div className='col-lg-6 col-md-12 col-sm-12 sec5col1'>
+            <div className='sec5' style={{ marginTop: '100px', marginBottom: '100px' }}>
+            <div style={{ display: 'flex',placeContent: 'center',paddingTop: '350px'}}>
+              <div className='col-lg-11 col-md-11 col-sm-12 sec5col1'>
                 <span className='sec5_title'>Any Questions ?</span>
                 <p className='sec5_desc'>You can reach us anytime at <span style={{ color: '#479C2B' }}>support@ecosprout.com</span></p>
                 <form className='form' ref={form} onSubmit={sendEmail}>
@@ -270,6 +270,7 @@ function App() {
                 <div id="successMessage" style={{ display: 'none' }}>Email sent successfully!</div>
               </div>
             </div>
+          </div>
           </div>
 
           <div className='footer' style={{ marginTop: '100px', padding: '100px 0' }}>
