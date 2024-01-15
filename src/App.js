@@ -34,6 +34,34 @@ import footerlogo from './img/footerlogo.png'
 
 function App() {
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Add a scroll event listener
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs once when the component mounts
+
+  const scrollToTop = () => {
+    // Scroll to the top smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const [buttonText, setButtonText] = useState('Submit');
   const [isActive, setIsActive] = useState(false);
 
@@ -110,7 +138,12 @@ function App() {
         </div>
       ) : (
         <>
-          <div className="sec1">
+<button
+      id="topbutton"
+      style={{ opacity: isVisible ? 1 : 0 }}
+      onClick={scrollToTop} />
+    
+    <div className="sec1">
             <div className='container'>
               <div className='header'>
                 <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
@@ -118,8 +151,8 @@ function App() {
                 <div className='menu-item col-lg-6 col-md-7'>
                   <ScrollLink to="sec1" smooth={true} duration={500} offset={100}>Home</ScrollLink>
                   <ScrollLink to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink>
-                  <ScrollLink to="sec4" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink>
-                  <ScrollLink to="sec5" smooth={true} duration={500} offset={100}>Contact Us</ScrollLink>
+                  <ScrollLink to="sec3" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink>
+                  <ScrollLink to="sec5" smooth={true} duration={500} offset={200}>Contact Us</ScrollLink>
                 </div>
               </div>
               <div className='div2 section'>
