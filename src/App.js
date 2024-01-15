@@ -26,9 +26,9 @@ import './btn.css'
 import './submit.css'
 import { Link as ScrollLink, Element } from "react-scroll";
 import footerlogo from './img/footerlogo.png'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import Plant from './components/Plant'
+// import { Canvas } from '@react-three/fiber'
+// import { OrbitControls } from '@react-three/drei'
+// import Plant from './components/Plant'
 
 // import ThreeScene from './components/ThreeScene';
 
@@ -99,6 +99,7 @@ function App() {
       <Helmet>
         <title>EcoSprout</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
       </Helmet>
 
       {loading ? (
@@ -146,7 +147,7 @@ function App() {
                 <div className='col-lg-3 col-md-5 community'>
                   <div className='comdiv'>
                     <img className='propic' src={propic} alt='' />
-                    <p style={{ fontSize: '18px', fontWeight: '900' }}>Join Our Community</p>
+                    <p style={{ fontSize: '21px', fontWeight: '600' }}>Join Our Community</p>
                   </div>
                   <img className='topview2' src={topview2} alt='' />
                 </div>
@@ -175,7 +176,9 @@ function App() {
           </div>
 
           <div className='sec3 section container'>
-            <div><span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span></div>
+            <div className='col-lg-11 col-md-11 col-sm-12'>
+              <span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span>
+              </div>
             <div className='sec3subdiv'>
               <div className='col-lg-8 col-md-12 col-sm-12'>
                 <img className='map' src={map} alt='' width='100%' />
