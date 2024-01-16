@@ -241,7 +241,7 @@ function App() {
               <div className='col-md-3 col-md-3 col-sm-12 gogreen' style={{ textAlign: 'left' }}>
                 <h1 className={`home-title ${inViewport ? 'in-viewport' : 'go-green'}`}>
                   <span className='sec4_title'>Go Green!</span>
-                  <span><p className='sec4_desc'>some big companies that we work with, and trust us very much</p>
+                  <span><p className='sec4_desc'>Companies that we admire and have our inspiration</p>
                   </span>
                 </h1>
               </div>
@@ -311,7 +311,7 @@ function App() {
 
           <div className='footer' style={{ marginTop: '100px', padding: '100px 0' }}>
             <div className='container'>
-              <div style={{ display: 'flex', placeContent: 'space-between' }}>
+              <div className='footermain'>
                 <div className='col-lg-8 col-md-8 col-sm-12'>
                   <span id='footertitle'>Cultivating a Greener world</span>
                   <div className='col-lg-8 col-md-8 col-sm-12'><p style={{ color: 'white', marginTop: '20px' }}>Cultivating a greener world through sustainable practices, tree planting initiatives, and environmental stewardship to foster a harmonious coexistence with nature.</p>
@@ -328,7 +328,7 @@ function App() {
                   <p id='logodesc'>Inspiring change, one article at a time. Hub for insightful content, dedicated to cultivating a greener world. Dive into sustainability, tree planting initiatives, and environmental stewardship as we explore the path to a harmonious coexistence with nature. Join us on this journey toward a more eco-conscious tomorrow!</p>
                 </div>
                 <div style={{ display: 'flex', gap: '20px', placeContent: 'FLEX-END' }} className='col-lg-6 col-md-6 col-sm-12'>
-                  <div>
+                  <div className='footer-menucol'>
                     <p className='footersubmenu'>Company</p>
                     <p className='footer_menulinks'>Home</p>
                     <p className='footer_menulinks'>About Us</p>
@@ -338,6 +338,7 @@ function App() {
                 </div>
               </div>
             </div>
+            
           </div>
 
           {/* <div>
@@ -350,7 +351,9 @@ function App() {
 
         </>
       )}
-
+<div className='col-lg-12 col-md-12 col-sm-12' style={{textAlign:'center',background:'#1d1e25'}}>
+              <p style={{color:'white',margin:'0',paddingBottom:'20px'}}>@copyright Ecosprout 2024. Designed by <a style={{color:'#479c2b', textDecoration:'none'}} href="https://brewdmedia.com/">Brewdmedia</a></p>
+            </div>
     </div>
   );
 }
