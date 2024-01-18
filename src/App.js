@@ -309,7 +309,7 @@ function App() {
           </div>
           </div>
 
-          <div className='footer' style={{ marginTop: '100px', padding: '100px 0' }}>
+          <div className='footer' style={{ marginTop: '100px', paddingTop: '100px', paddingBottom:'50px' }}>
             <div className='container'>
               <div className='footermain'>
                 <div className='col-lg-8 col-md-8 col-sm-12'>
@@ -338,7 +338,10 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
+<div className='col-lg-12 col-md-12 col-sm-12' style={{textAlign:'center',background:'#1d1e25'}}>
+              <p style={{color:'white',margin:'0',paddingTop:'100px'}}>@copyright Ecosprout 2024. Designed by <a style={{color:'#479c2b', textDecoration:'none'}} href="https://brewdmedia.com/">Brewdmedia</a></p>
+            </div>            
           </div>
 
           {/* <div>
@@ -351,9 +354,6 @@ function App() {
 
         </>
       )}
-<div className='col-lg-12 col-md-12 col-sm-12' style={{textAlign:'center',background:'#1d1e25'}}>
-              <p style={{color:'white',margin:'0',paddingBottom:'20px'}}>@copyright Ecosprout 2024. Designed by <a style={{color:'#479c2b', textDecoration:'none'}} href="https://brewdmedia.com/">Brewdmedia</a></p>
-            </div>
     </div>
   );
 }
