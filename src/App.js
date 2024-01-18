@@ -330,10 +330,14 @@ function App() {
                 <div style={{ display: 'flex', gap: '20px', placeContent: 'FLEX-END' }} className='col-lg-6 col-md-6 col-sm-12'>
                   <div className='footer-menucol'>
                     <p className='footersubmenu'>Company</p>
-                    <p className='footer_menulinks'>Home</p>
+                    {/* <p className='footer_menulinks'>Home</p>
                     <p className='footer_menulinks'>About Us</p>
                     <p className='footer_menulinks'>Endeavours</p>
-                    <p className='footer_menulinks'>Contact Us</p>
+                    <p className='footer_menulinks'>Contact Us</p> */}
+                    <p><ScrollLink className='footer_menulinks' to="sec1" smooth={true} duration={500} offset={100}>Home</ScrollLink></p>
+                  <p><ScrollLink className='footer_menulinks' to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink></p>
+                  <p><ScrollLink className='footer_menulinks' to="sec3" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink></p>
+                  <p><ScrollLink className='footer_menulinks' to="sec5" smooth={true} duration={500} offset={200}>Contact Us</ScrollLink></p>
                   </div>
                 </div>
               </div>
