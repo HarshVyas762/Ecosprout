@@ -658,6 +658,13 @@ text-decoration: underline;
         width: 215px;
         top: 1em;
     }
+    .topview {
+      width: 266px;
+      height: 96px;
+      margin-top: 32px;
+      border-radius: 80px;
+      margin-left: 230px;
+  }
 
     .volunteers {
         width: auto;
