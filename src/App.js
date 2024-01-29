@@ -138,12 +138,12 @@ function App() {
         </div>
       ) : (
         <>
-<button
-      id="topbutton"
-      style={{ opacity: isVisible ? 1 : 0 }}
-      onClick={scrollToTop} />
-    
-    <div className="sec1">
+          <button
+            id="topbutton"
+            style={{ opacity: isVisible ? 1 : 0 }}
+            onClick={scrollToTop} />
+
+          <div className="sec1">
             <div className='container'>
               <div className='header'>
                 <div className='col-lg-3 col-md-3'><img className='logo' src={logo} alt='' /></div>
@@ -211,7 +211,7 @@ function App() {
           <div className='sec3 section container'>
             <div className='col-lg-11 col-md-11 col-sm-12'>
               <span className='sec3_title'>Cultivating a Greener World through Sustainability, Tree Planting, and Stewardship</span>
-              </div>
+            </div>
             <div className='sec3subdiv'>
               <div className='col-lg-8 col-md-12 col-sm-12'>
                 <img className='map' src={map} alt='' width='100%' />
@@ -260,56 +260,56 @@ function App() {
             </div>
           </div>
 
-          <div className='container' style={{height: '74em'}}>
+          <div className='container' style={{ height: '74em' }}>
             {/* <ThreeModelViewer /> */}
             {/* <canvas id="canvas3d"></canvas> */}
             <div className='sec5' style={{ marginTop: '100px', marginBottom: '100px' }}>
-            <div style={{ display: 'flex',placeContent: 'center',paddingTop: '350px'}}>
-              <div className='col-lg-11 col-md-11 col-sm-12 sec5col1'>
-                <span className='sec5_title'>Any Questions ?</span>
-                <p className='sec5_desc'>You can reach us anytime at <span style={{ color: '#479C2B' }}>support@ecosprout.com</span></p>
-                <form className='form' ref={form} onSubmit={sendEmail}>
-                  <div style={{ display: 'flex', placeContent: 'space-between', flexWrap: 'wrap', rowGap: '30px' }}>
-                    <div className='form_field col-lg-5 col-md-5 col-sm-12'>
-                      <label>First name</label>
-                      <input type="text" placeholder='First name' className='form_input' name="fname" />
-                    </div>
-                    <div className='form_field col-lg-6 col-md-6 col-sm-12'>
-                      <label>Last name</label>
-                      <input type="text" placeholder='Last name' className='form_input' name="lname" />
-                    </div>
-                  </div>
-                  <div className='form_field'>
-                    <label>Email</label>
-                    <input type="Email" placeholder='Email' className='form_input' name="email" />
-                  </div>
-                  <div className='form_field'>
-                    <label>Phone Number</label>
-                    <input type="Number" placeholder='First name' className='form_input' name="num" />
-                  </div>
-                  <div className='form_field'>
-                    <label>Message</label>
-                    <textarea type="text" placeholder='Leave us a message...' className='form_input' name="message" id="message" />
-                  </div>
-                  <div>
-                    {/* <button type='Submit' className='submit' value="Send">Get Started</button> */}
-                    <button type='submit' className={`submit ${isActive ? 'active' : ''}`} value="Send">
-                      {buttonText}
-                      <div className="check-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                          <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                        </svg>
+              <div style={{ display: 'flex', placeContent: 'center', paddingTop: '350px' }}>
+                <div className='col-lg-11 col-md-11 col-sm-12 sec5col1'>
+                  <span className='sec5_title'>Any Questions ?</span>
+                  <p className='sec5_desc'>You can reach us anytime at <span style={{ color: '#479C2B' }}>support@ecosprout.com</span></p>
+                  <form className='form' ref={form} onSubmit={sendEmail}>
+                    <div style={{ display: 'flex', placeContent: 'space-between', flexWrap: 'wrap', rowGap: '30px' }}>
+                      <div className='form_field col-lg-5 col-md-5 col-sm-12'>
+                        <label>First name</label>
+                        <input type="text" placeholder='First name' className='form_input' name="fname" />
                       </div>
-                    </button>
-                  </div>
-                </form>
-                <div id="successMessage" style={{ display: 'none' }}>Email sent successfully!</div>
+                      <div className='form_field col-lg-6 col-md-6 col-sm-12'>
+                        <label>Last name</label>
+                        <input type="text" placeholder='Last name' className='form_input' name="lname" />
+                      </div>
+                    </div>
+                    <div className='form_field'>
+                      <label>Email</label>
+                      <input type="Email" placeholder='Email' className='form_input' name="email" />
+                    </div>
+                    <div className='form_field'>
+                      <label>Phone Number</label>
+                      <input type="Number" placeholder='First name' className='form_input' name="num" />
+                    </div>
+                    <div className='form_field'>
+                      <label>Message</label>
+                      <textarea type="text" placeholder='Leave us a message...' className='form_input' name="message" id="message" />
+                    </div>
+                    <div>
+                      {/* <button type='Submit' className='submit' value="Send">Get Started</button> */}
+                      <button type='submit' className={`submit ${isActive ? 'active' : ''}`} value="Send">
+                        {buttonText}
+                        <div className="check-box">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                  <div id="successMessage" style={{ display: 'none' }}>Email sent successfully!</div>
+                </div>
               </div>
             </div>
           </div>
-          </div>
 
-          <div className='footer' style={{ marginTop: '100px', paddingTop: '100px', paddingBottom:'50px' }}>
+          <div className='footer' style={{ marginTop: '100px', paddingTop: '100px', paddingBottom: '50px' }}>
             <div className='container'>
               <div className='footermain'>
                 <div className='col-lg-8 col-md-8 col-sm-12'>
@@ -320,7 +320,7 @@ function App() {
                 <div className='col-lg-2 col-md-2 col-sm-12'>
                   <button id='footerbtn'>Join Us Now</button>
                 </div>
-              </div> 
+              </div>
 
               <div style={{ display: 'flex', marginTop: '100px' }}>
                 <div className='col-lg-6 col-md-6 col-sm-12'>
@@ -335,17 +335,17 @@ function App() {
                     <p className='footer_menulinks'>Endeavours</p>
                     <p className='footer_menulinks'>Contact Us</p> */}
                     <p><ScrollLink className='footer_menulinks' to="sec1" smooth={true} duration={500} offset={100}>Home</ScrollLink></p>
-                  <p><ScrollLink className='footer_menulinks' to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink></p>
-                  <p><ScrollLink className='footer_menulinks' to="sec3" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink></p>
-                  <p><ScrollLink className='footer_menulinks' to="sec5" smooth={true} duration={500} offset={200}>Contact Us</ScrollLink></p>
+                    <p><ScrollLink className='footer_menulinks' to="sec2" smooth={true} duration={500} offset={100}>About</ScrollLink></p>
+                    <p><ScrollLink className='footer_menulinks' to="sec3" smooth={true} duration={500} offset={100}>Endeavours</ScrollLink></p>
+                    <p><ScrollLink className='footer_menulinks' to="sec5" smooth={true} duration={500} offset={200}>Contact Us</ScrollLink></p>
                   </div>
                 </div>
               </div>
             </div>
 
-<div className='col-lg-12 col-md-12 col-sm-12' style={{textAlign:'center',background:'#1d1e25'}}>
-              <p style={{color:'white',margin:'0',paddingTop:'100px'}}>@copyright Ecosprout 2024. Designed by <a style={{color:'#479c2b', textDecoration:'none'}} href="https://brewdmedia.com/">Brewdmedia</a></p>
-            </div>            
+            <div className='col-lg-12 col-md-12 col-sm-12' style={{ textAlign: 'center', background: '#1d1e25' }}>
+              <p style={{ color: 'white', margin: '0', paddingTop: '100px' }}>@copyright Ecosprout 2024. Designed by <a style={{ color: '#479c2b', textDecoration: 'none' }} href="https://brewdmedia.com/">Brewdmedia</a></p>
+            </div>
           </div>
 
           {/* <div>
